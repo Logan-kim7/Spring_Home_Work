@@ -4,36 +4,41 @@
 <c:set var="rootPath" value="${pageContext.request.contextPath}" />        
 
 
+<style>
+section#bbs-detail-header {
+	width: 50%;
+	border: 1px solid blue;
+	margin: 20px auto;
+	display: flex;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+section#bbs-detail-header article:first-child {
+	flex: 1;
+}
+
+</style>
+<script>
 
 
-<tabel>
-	<thead>
-		<tr>
-			<th>NO</th>
-			<th>작성일자</th>
-			<th>작성시각</th>
-			<th>작성자</th>
-			<th>제목</th>
-			<th>조회</th>
-		</tr>
-	</thead>
-	
-	<tbody>
-		<c:if>
-			<tr><td></td></tr>	
-		
-		</c:if>
-		
-		<c:forEach>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</c:forEach>
-	</tbody>
-</tabel>
-<button id="bbs-write">글쓰기</button>
+</script>
+<section id="bbs-detail-header">
+	<article>
+		<a href="${rootPath}/update/${BBSVo.b_file}" target="_new">
+			<img src="${rootPath}/upload/${BBSVO.b_file}" width="200px">
+		</a>
+	</article>
+	<article>
+		<div class="title">제목</div><div class="content">${BBSVO.b_subject}</div>
+		<div class="title">작성일시</div ><div class="content">${BBSVO.b_date}</div>
+		<div class="title">작성자</div><div class="content">${BBSVO.b_write}</div>
+	</article>
+</section>
+<section id="bbs-detail-body">
+	${BBSVO.b_content}
+</section>
+<section id="bbs-button-box">
+	<button class="list">리스트</button>
+	<button class="update">수정</button>
+	<button class="delete">삭제</button>
+</section>
