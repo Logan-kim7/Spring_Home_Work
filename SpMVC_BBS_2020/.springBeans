@@ -11,6 +11,7 @@
 		<config>src/main/resources/appServlet/mybatis-context.xml</config>
 		<config>src/main/resources/appServlet/servlet-context.xml</config>
 		<config>src/main/resources/appServlet/tiles-context.xml</config>
+		<config>src/main/resources/file-context.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

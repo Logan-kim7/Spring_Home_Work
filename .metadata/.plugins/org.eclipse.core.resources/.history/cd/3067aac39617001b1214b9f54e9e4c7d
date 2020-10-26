@@ -1,0 +1,5 @@
+package com.biz.bbs.service;
+
+public class FileServiceImplV1 implements FileService {
+
+}
