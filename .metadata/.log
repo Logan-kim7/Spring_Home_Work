@@ -6801,3 +6801,1110 @@ java.lang.IllegalArgumentException: 'alias' must not be empty
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-14 20:04:17.175
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2020-11-16 22:08:20.075 -----------------------------------------------
+eclipse.buildId=3.9.13.202006181137-RELEASE-e416
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.ajdt.ui 4 0 2020-11-16 22:08:54.118
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ajdt.ui [114]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.6.0,4.3.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.11.400.v20200514-1728"; singleton:="true"
+       org.eclipse.pde.ui [568]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [1015]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.3.0,4.3.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.j2ee.ejb.annotations.xdoclet 4 0 2020-11-16 22:08:54.171
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.ejb.annotations.xdoclet [364]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt; bundle-version="3.18.400.v20200604-0540"; singleton:="true"
+       org.eclipse.jdt [294]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [1015]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.j2ee.xdoclet.runtime 4 0 2020-11-16 22:08:54.179
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.xdoclet.runtime [373]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ejb.annotations.xdoclet; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ejb.annotations.xdoclet; bundle-version="1.2.300.v201903222024"; singleton:="true"
+       org.eclipse.jst.j2ee.ejb.annotations.xdoclet [364]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt; bundle-version="3.18.400.v20200604-0540"; singleton:="true"
+              org.eclipse.jdt [294]
+                Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+                     org.eclipse.ui.cheatsheets [1015]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                            org.eclipse.help.ui [986]
+                              Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                                   org.eclipse.help.base [985]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.apache.trinidad.tagsupport 4 0 2020-11-16 22:08:54.187
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.apache.trinidad.tagsupport [378]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.pagedesigner; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.pagedesigner; bundle-version="1.8.3.v202003241443"; singleton:="true"
+       org.eclipse.jst.pagedesigner [393]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.101.v201902121810"; singleton:="true"
+              org.eclipse.jst.jsf.common.ui [381]
+                Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+                     org.eclipse.ui.cheatsheets [1015]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                            org.eclipse.help.ui [986]
+                              Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                                   org.eclipse.help.base [985]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.101.v201902121810"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.common.ui 4 0 2020-11-16 22:08:54.197
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.common.ui [381]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+       org.eclipse.ui.cheatsheets [1015]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+              org.eclipse.help.ui [986]
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                     org.eclipse.help.base [985]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.facelet.ui 4 0 2020-11-16 22:08:54.207
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.facelet.ui [385]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.ui; bundle-version="1.0.1"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.ui; bundle-version="1.6.103.v202003241443"; singleton:="true"
+       org.eclipse.jst.jsf.ui [389]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.1,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.101.v201902121810"; singleton:="true"
+              org.eclipse.jst.jsf.common.ui [381]
+                Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+                     org.eclipse.ui.cheatsheets [1015]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                            org.eclipse.help.ui [986]
+                              Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                                   org.eclipse.help.base [985]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.facesconfig.ui 4 0 2020-11-16 22:08:54.216
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.facesconfig.ui [387]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.101.v201902121810"; singleton:="true"
+       org.eclipse.jst.jsf.common.ui [381]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [1015]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.ui 4 0 2020-11-16 22:08:54.227
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.ui [389]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.1,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.101.v201902121810"; singleton:="true"
+       org.eclipse.jst.jsf.common.ui [381]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [1015]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.pagedesigner 4 0 2020-11-16 22:08:54.238
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.pagedesigner [393]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.101.v201902121810"; singleton:="true"
+       org.eclipse.jst.jsf.common.ui [381]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [1015]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.pagedesigner.jsf.ui 4 0 2020-11-16 22:08:54.250
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.pagedesigner.jsf.ui [394]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.101.v201902121810"; singleton:="true"
+       org.eclipse.jst.jsf.common.ui [381]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [1015]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.pagedesigner; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.pagedesigner; bundle-version="1.8.3.v202003241443"; singleton:="true"
+       org.eclipse.jst.pagedesigner [393]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.101.v201902121810"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.api.tools.ui 4 0 2020-11-16 22:08:54.262
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.api.tools.ui [553]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.11.400.v20200514-1728"; singleton:="true"
+       org.eclipse.pde.ui [568]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [1015]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.ds.annotations 4 0 2020-11-16 22:08:54.274
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ds.annotations [557]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.11.400.v20200514-1728"; singleton:="true"
+       org.eclipse.pde.ui [568]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [1015]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.ds.ui 4 0 2020-11-16 22:08:54.287
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ds.ui [560]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.3.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.11.400.v20200514-1728"; singleton:="true"
+       org.eclipse.pde.ui [568]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [1015]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.genericeditor.extension 4 0 2020-11-16 22:08:54.300
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.genericeditor.extension [562]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.10.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.11.400.v20200514-1728"; singleton:="true"
+       org.eclipse.pde.ui [568]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [1015]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.ua.ui 4 0 2020-11-16 22:08:54.312
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ua.ui [567]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.11.400.v20200514-1728"; singleton:="true"
+       org.eclipse.pde.ui [568]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [1015]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.3.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.ui 4 0 2020-11-16 22:08:54.325
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ui [568]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+       org.eclipse.ui.cheatsheets [1015]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+              org.eclipse.help.ui [986]
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                     org.eclipse.help.base [985]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.ajdt.ui.xref 4 0 2020-11-16 22:08:54.629
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.ajdt.ui.xref [813]
+  Unresolved requirement: Import-Package: org.eclipse.ajdt.internal.ui.editor
+    -> Export-Package: org.eclipse.ajdt.internal.ui.editor; bundle-symbolic-name="org.eclipse.ajdt.ui"; bundle-version="2.2.4.202004271746"; version="0.0.0"; aspect-policy:="opt-in"
+       org.eclipse.ajdt.ui [114]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.6.0,4.3.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.11.400.v20200514-1728"; singleton:="true"
+              org.eclipse.pde.ui [568]
+                Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+                     org.eclipse.ui.cheatsheets [1015]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                            org.eclipse.help.ui [986]
+                              Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                                   org.eclipse.help.base [985]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.3.0,4.3.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+  Unresolved requirement: Import-Package: org.eclipse.ajdt.internal.ui.lazystart
+    -> Export-Package: org.eclipse.ajdt.internal.ui.lazystart; bundle-symbolic-name="org.eclipse.ajdt.ui"; bundle-version="2.2.4.202004271746"; version="0.0.0"; aspect-policy:="opt-in"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.help.base 4 0 2020-11-16 22:08:54.665
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.help.base [985]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.help.ui 4 0 2020-11-16 22:08:54.673
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.help.ui [986]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+       org.eclipse.help.base [985]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.help.webapp 4 0 2020-11-16 22:08:54.682
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.help.webapp [987]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+       org.eclipse.help.base [985]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ui.cheatsheets 4 0 2020-11-16 22:08:54.691
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.cheatsheets [1015]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+       org.eclipse.help.ui [986]
+         Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+              org.eclipse.help.base [985]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ui.intro.quicklinks 4 0 2020-11-16 22:08:54.700
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.intro.quicklinks [1024]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ui.intro.universal 4 0 2020-11-16 22:08:54.708
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.intro.universal [1025]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.intro.quicklinks; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.ui.intro.quicklinks; bundle-version="1.1.0.v20200724-0708"; singleton:="true"
+       org.eclipse.ui.intro.quicklinks [1024]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.objectaid.uml 4 0 2020-11-16 22:08:54.716
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.objectaid.uml [1087]
+  Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="3.5.0"
+    -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+       org.eclipse.help.ui [986]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+              org.eclipse.help.base [985]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.objectaid.uml.addon 4 0 2020-11-16 22:08:54.726
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.objectaid.uml.addon [1088]
+  Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+       com.objectaid.uml [1087]
+         Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="3.5.0"
+           -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+              org.eclipse.help.ui [986]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                     org.eclipse.help.base [985]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.objectaid.uml.addon.cls 4 0 2020-11-16 22:08:54.735
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.objectaid.uml.addon.cls [1089]
+  Unresolved requirement: Require-Bundle: com.objectaid.uml.addon; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml.addon; bundle-version="1.2.4"; singleton:="true"
+       com.objectaid.uml.addon [1088]
+         Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+           -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+              com.objectaid.uml [1087]
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="3.5.0"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: com.objectaid.uml.cls; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml.cls; bundle-version="1.2.4"; singleton:="true"
+       com.objectaid.uml.cls [1091]
+         Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+           -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+  Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.objectaid.uml.addon.java 4 0 2020-11-16 22:08:54.743
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.objectaid.uml.addon.java [1090]
+  Unresolved requirement: Require-Bundle: com.objectaid.uml.addon; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml.addon; bundle-version="1.2.4"; singleton:="true"
+       com.objectaid.uml.addon [1088]
+         Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+           -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+              com.objectaid.uml [1087]
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="3.5.0"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+  Unresolved requirement: Require-Bundle: com.objectaid.uml.java; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml.java; bundle-version="1.2.4"; singleton:="true"
+       com.objectaid.uml.java [1093]
+         Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+           -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.objectaid.uml.cls 4 0 2020-11-16 22:08:54.751
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.objectaid.uml.cls [1091]
+  Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+       com.objectaid.uml [1087]
+         Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="3.5.0"
+           -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+              org.eclipse.help.ui [986]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                     org.eclipse.help.base [985]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.objectaid.uml.cls.java 4 0 2020-11-16 22:08:54.759
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.objectaid.uml.cls.java [1092]
+  Unresolved requirement: Require-Bundle: com.objectaid.uml.java; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml.java; bundle-version="1.2.4"; singleton:="true"
+       com.objectaid.uml.java [1093]
+         Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+           -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+              com.objectaid.uml [1087]
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="3.5.0"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [986]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [985]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+  Unresolved requirement: Require-Bundle: com.objectaid.uml.cls; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml.cls; bundle-version="1.2.4"; singleton:="true"
+       com.objectaid.uml.cls [1091]
+         Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+           -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.objectaid.uml.java 4 0 2020-11-16 22:08:54.770
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.objectaid.uml.java [1093]
+  Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+       com.objectaid.uml [1087]
+         Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="3.5.0"
+           -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+              org.eclipse.help.ui [986]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                     org.eclipse.help.base [985]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.objectaid.uml.seq 4 0 2020-11-16 22:08:54.779
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.objectaid.uml.seq [1094]
+  Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+       com.objectaid.uml [1087]
+         Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="3.5.0"
+           -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+              org.eclipse.help.ui [986]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                     org.eclipse.help.base [985]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY com.objectaid.uml.seq.java 4 0 2020-11-16 22:08:54.789
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.objectaid.uml.seq.java [1095]
+  Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+       com.objectaid.uml [1087]
+         Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="3.5.0"
+           -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+              org.eclipse.help.ui [986]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                     org.eclipse.help.base [985]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: com.objectaid.uml.java; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml.java; bundle-version="1.2.4"; singleton:="true"
+       com.objectaid.uml.java [1093]
+         Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+           -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+  Unresolved requirement: Require-Bundle: com.objectaid.uml.seq; bundle-version="1.2.4"
+    -> Bundle-SymbolicName: com.objectaid.uml.seq; bundle-version="1.2.4"; singleton:="true"
+       com.objectaid.uml.seq [1094]
+         Unresolved requirement: Require-Bundle: com.objectaid.uml; bundle-version="1.2.4"
+           -> Bundle-SymbolicName: com.objectaid.uml; bundle-version="1.2.4"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ui 2 0 2020-11-16 22:09:05.247
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-16 22:09:05.247
+!MESSAGE Defining a key binding with no key sequence has no effect: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler'
+
+!ENTRY org.eclipse.jface 2 0 2020-11-16 22:09:08.893
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-16 22:09:08.893
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@13fad0c7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@24fb8317,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-11-16 22:09:27.989
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JM'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:13:29.364
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:13:29.387
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:17:38.292
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:17:38.308
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-11-16 22:29:11.315
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-11-16 22:29:11.326
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-11-16 22:29:11.341
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-11-16 22:29:23.838
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-11-16 22:29:23.848
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-11-16 22:29:23.856
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:36:30.977
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:36:30.993
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:37:32.705
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:37:32.729
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:48:08.442
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:48:08.454
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:48:21.287
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:48:21.298
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:50:31.965
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:50:31.977
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:57:53.488
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 22:57:53.499
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-11-16 22:58:31.518
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-11-16 22:58:31.525
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-11-16 22:58:31.533
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 23:00:09.840
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 23:00:09.855
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 23:00:37.186
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 23:00:37.199
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 23:14:54.949
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 23:14:54.962
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 23:15:07.092
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-11-16 23:15:07.105
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
